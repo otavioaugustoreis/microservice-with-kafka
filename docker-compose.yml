@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  producerapi:
+    image: ${DOCKER_REGISTRY-}producerapi
+    build:
+      context: .
+      dockerfile: microservice-with-kafka/Dockerfile
